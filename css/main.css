@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+}
+
+#image{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.explanation{
+    width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.first div h2{
+    font-size: 50px;
+    padding-top: 20px;
+    color: lightgrey;
+    text-align: center;
+}
+
+.second{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galery-item{
+    width: 33.33%;
+    height: 50%;
+    background-size: cover;
+}
+
