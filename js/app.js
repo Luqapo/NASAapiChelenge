@@ -4,7 +4,7 @@ $(function(){
     var marsUrl = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=1&api_key=cRWFf2n057JsyqCo6BfWl538oEfnuEpoxYWvWyUq'
     var image = $('#image');
     var galeryItem = $('.galery-item');
-    console.log(galeryItem);
+    var first = $('.first');
 
     function getFromSerwer(){
         $.ajax({
@@ -42,6 +42,10 @@ $(function(){
             }
         }
     }
+
+    first.on('click', () => {
+        $('.explanation').toggle();
+    })
 
     getFromSerwer();
     getMarsPhotos();
